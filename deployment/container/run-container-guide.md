@@ -74,31 +74,31 @@ cd phonebill
 ### API Gateway
 ```bash
 docker tag api-gateway:latest acrdigitalgarage02.azurecr.io/phonebill/api-gateway:latest
-docker push acrdigitalgarage02.azurecr.io/phonebill/api-gateway:latest
+docker push acrdigitalgarage02.azurecr.io/phonebill/api-gateway:dg0507
 ```
 
 ### User Service
 ```bash
 docker tag user-service:latest acrdigitalgarage02.azurecr.io/phonebill/user-service:latest
-docker push acrdigitalgarage02.azurecr.io/phonebill/user-service:latest
+docker push acrdigitalgarage02.azurecr.io/phonebill/user-service:dg0507
 ```
 
 ### Bill Service
 ```bash
 docker tag bill-service:latest acrdigitalgarage02.azurecr.io/phonebill/bill-service:latest
-docker push acrdigitalgarage02.azurecr.io/phonebill/bill-service:latest
+docker push acrdigitalgarage02.azurecr.io/phonebill/bill-service:dg0507
 ```
 
 ### Product Service
 ```bash
 docker tag product-service:latest acrdigitalgarage02.azurecr.io/phonebill/product-service:latest
-docker push acrdigitalgarage02.azurecr.io/phonebill/product-service:latest
+docker push acrdigitalgarage02.azurecr.io/phonebill/product-service:dg0507
 ```
 
 ### KOS Mock
 ```bash
 docker tag kos-mock:latest acrdigitalgarage02.azurecr.io/phonebill/kos-mock:latest
-docker push acrdigitalgarage02.azurecr.io/phonebill/kos-mock:latest
+docker push acrdigitalgarage02.azurecr.io/phonebill/kos-mock:dg0507
 ```
 
 ## 컨테이너 실행 명령
