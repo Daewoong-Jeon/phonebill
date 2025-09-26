@@ -122,6 +122,19 @@ docker build \
   -t ${service}:latest .
 ```
 
+### KOS Mock Service
+```bash
+DOCKER_FILE=deployment/container/Dockerfile-backend
+service=api-gateway
+
+docker build \
+  --platform linux/amd64 \
+  --build-arg BUILD_LIB_DIR="${service}/build/libs" \
+  --build-arg ARTIFACTORY_FILE="${service}.jar" \
+  -f ${DOCKER_FILE} \
+  -t ${service}:latest .
+```
+
 ## 빌드 결과
 
 ### 성공적으로 생성된 이미지들
