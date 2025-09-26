@@ -63,6 +63,7 @@ CMD ["java ${JAVA_OPTS} -jar app.jar"]
 ./gradlew bill-service:bootJar
 ./gradlew product-service:bootJar
 ./gradlew kos-mock:bootJar
+./gradlew api-gateway:bootJar
 ```
 
 ## 컨테이너 이미지 빌드
