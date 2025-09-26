@@ -18,6 +18,9 @@ dependencies {
     // Logging (bill service specific)
     implementation 'org.slf4j:slf4j-api'
     implementation 'ch.qos.logback:logback-classic'
+
+    // Actuator for health checks and monitoring
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     
     // HTTP Client
     implementation 'org.springframework.boot:spring-boot-starter-webflux'

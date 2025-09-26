@@ -28,6 +28,9 @@ dependencies {
     testImplementation 'org.testcontainers:postgresql'
     testImplementation 'com.github.tomakehurst:wiremock-jre8:2.35.0'
     testImplementation 'io.github.resilience4j:resilience4j-test:2.1.0'
+
+    // Actuator for health checks and monitoring
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
 }
 
 // JAR 설정

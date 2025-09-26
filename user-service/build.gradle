@@ -21,6 +21,9 @@ dependencies {
     testImplementation 'org.testcontainers:postgresql'
     testImplementation 'com.h2database:h2'
     testImplementation 'it.ozimov:embedded-redis:0.7.3'
+
+    // Actuator for health checks and monitoring
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
 }
 
 // 추가 테스트 설정 (루트에서 기본 설정됨)

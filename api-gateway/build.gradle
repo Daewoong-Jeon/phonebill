@@ -15,6 +15,9 @@ dependencies {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-data-jpa'
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-data-redis'
     }
+
+    // Actuator for health checks and monitoring
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     
     // Spring Cloud Gateway (api-gateway specific)
     implementation 'org.springframework.cloud:spring-cloud-starter-gateway'

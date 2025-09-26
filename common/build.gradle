@@ -35,3 +35,5 @@ dependencies {
     api 'com.fasterxml.jackson.core:jackson-databind'
     api 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 }
+
+// common 모듈은 라이브러리이므로 bootJar 대신 일반 jar 사용
