@@ -110,7 +110,7 @@ SERVER_PORT=8084
 docker run -d --name kos-mock --rm -p ${SERVER_PORT}:${SERVER_PORT} \
 -e SERVER_PORT=${SERVER_PORT} \
 -e SPRING_PROFILES_ACTIVE=dev \
-acrdigitalgarage02.azurecr.io/phonebill/kos-mock:latest
+acrdigitalgarage02.azurecr.io/phonebill/kos-mock:dg0507
 ```
 
 ### 2. User Service 실행
@@ -136,7 +136,7 @@ docker run -d --name user-service --rm -p ${SERVER_PORT}:${SERVER_PORT} \
 -e SERVER_PORT=${SERVER_PORT} \
 -e SHOW_SQL=true \
 -e SPRING_PROFILES_ACTIVE=dev \
-acrdigitalgarage02.azurecr.io/phonebill/user-service:latest
+acrdigitalgarage02.azurecr.io/phonebill/user-service:dg0507
 ```
 
 ### 3. Bill Service 실행
@@ -173,7 +173,7 @@ docker run -d --name bill-service --rm -p ${SERVER_PORT}:${SERVER_PORT} \
 -e REDIS_TIMEOUT=2000 \
 -e SERVER_PORT=${SERVER_PORT} \
 -e SPRING_PROFILES_ACTIVE=dev \
-acrdigitalgarage02.azurecr.io/phonebill/bill-service:latest
+acrdigitalgarage02.azurecr.io/phonebill/bill-service:dg0507
 ```
 
 ### 4. Product Service 실행
@@ -202,7 +202,7 @@ docker run -d --name product-service --rm -p ${SERVER_PORT}:${SERVER_PORT} \
 -e REDIS_PORT=6379 \
 -e SERVER_PORT=${SERVER_PORT} \
 -e SPRING_PROFILES_ACTIVE=dev \
-acrdigitalgarage02.azurecr.io/phonebill/product-service:latest
+acrdigitalgarage02.azurecr.io/phonebill/product-service:dg0507
 ```
 
 ### 5. API Gateway 실행
@@ -220,7 +220,7 @@ docker run -d --name api-gateway --rm -p ${SERVER_PORT}:${SERVER_PORT} \
 -e SERVER_PORT=${SERVER_PORT} \
 -e SPRING_PROFILES_ACTIVE=dev \
 -e USER_SERVICE_URL=http://localhost:8081 \
-acrdigitalgarage02.azurecr.io/phonebill/api-gateway:latest
+acrdigitalgarage02.azurecr.io/phonebill/api-gateway:dg0507
 ```
 
 ## 실행 확인
